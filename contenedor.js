@@ -47,12 +47,13 @@ class Contenedor {
         try {
             data = await fs.promises.readFile(this.fileName, 'utf-8')
             data = JSON.parse(data);
-            producto = data.find(producto => producto.id === id)
+            let producto = data.find(producto => producto.id === id)
             return producto
         
         } catch (error){
             console.log(error)
-            return null
+            let err = { error : 'producto no encontrado' }
+            return err
 
         }
     };
