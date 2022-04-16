@@ -65,8 +65,12 @@ class Contenedor {
             data = await fs.promises.readFile(this.fileName, 'utf-8')
             data = JSON.parse(data);
             index = data.findIndex(producto => producto.id === id)
+            if(index < 0)
+                {console.log('Producto inexistente')}
+            else {
             data.splice(index, 1)
             await fs.promises.writeFile(this.fileName, JSON.stringify(data));
+            }
         } catch (error){
             console.log(error)
 
