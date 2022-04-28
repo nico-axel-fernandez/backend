@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "apiEntrega.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nico-axel-fernandez/backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nico-axel-fernandez/backend/issues"
+  },
+  "homepage": "https://github.com/nico-axel-fernandez/backend#readme",
+  "dependencies": {
+    "express": "^4.18.0"
+  }
+}
